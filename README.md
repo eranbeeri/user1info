@@ -1,7 +1,7 @@
 # user1info
 JavaScript code to test automatically response's body for user #1
 
-Attached 3 files: JavaScript code (which I used in Postman), Json file (exported from Postman), HTML report file.
+Attached 3 files: JavaScript code (which I used in Postman), Json file (exported from Postman), HTML report file (created with Newman).
 
 I used Postman to create the call request to the relevant endpoint.  
 I wrote the tests in Postman's "tests" tab (for the relevant EP) using JavaScript. 
