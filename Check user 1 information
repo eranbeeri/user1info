@@ -1,0 +1,44 @@
+// Check status coode is 200.
+pm.test("Status code is 200", () => {
+  pm.expect(pm.response.code).to.eql(200);
+});
+
+// Check name is correct.
+pm.test("Name is correct", function () {
+    pm.response.to.have.jsonBody('name', 'Michael');
+});
+
+// Check ID is correct.
+pm.test("ID is correct", function () {
+    pm.response.to.have.jsonBody('id', 1825798);
+});
+
+// Check company is correct.
+pm.test("Company is correct", function () {
+    pm.response.to.have.jsonBody('company', null);
+});
+
+// Check location is correct.
+pm.test("Location is correct", function () {
+    pm.response.to.have.jsonBody('location', 'San Francisco, CA');
+});
+
+// Check public repos is correct.
+pm.test("Public repos is correct", function () {
+    pm.response.to.have.jsonBody('public_repos', 1);
+});
+
+// Check public gists is correct.
+pm.test("Public gists is correct", function () {
+    pm.response.to.have.jsonBody('public_gists', 0);
+});
+
+// Check followers is correct.
+pm.test("Followers is correct", function () {
+    pm.response.to.have.jsonBody('followers', 39);
+});
+
+// Check following is correct.
+pm.test("Following is correct", function () {
+    pm.response.to.have.jsonBody('following', 0);
+});
